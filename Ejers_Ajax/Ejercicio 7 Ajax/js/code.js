@@ -1,7 +1,7 @@
 window.onload = function(){
     "use strict";
     valida();
-	document.getElementById("provincias").onchange = valida2;
+    document.getElementById("provincias").onchange = valida2;
 };
 
 var READY_STATE_COMPLETE=4;
