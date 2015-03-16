@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="robots" content="noindex" />
+      <title>My Weblog</title>
+      <!--<link rel="stylesheet" href="style.css" />-->
+      <link rel="alternate" type="application/atom+xml" title="My Weblog feed" href="/feed/" />
+      <link rel="search" type="application/opensearchdescription+xml" title="My Weblog search" href="opensearch.xml" />
+    </head>
+    <body>
+       <header>Formulario</header>
+        <section>
+            <form action="servidor.php" method="POST" id="registro">
+                <div>Email: <input type="email"></div>
+                <div>Url: <input type="url"></div>
+                <div>Date: <input type="date"></div>
+                <div>Time: <input type="time"></div>
+                <div>DateTime: <input type="datetime"></div>
+                <div>Month: <input type="month"></div>
+                <div>Week: <input type="week"></div>
+                <div>Number: <input type="number"></div>
+                <div>Range: <input type="range"></div>
+                <div>Tel: <input type="tel"></div>
+                <div>Search: <input type="search"></div>
+                <div>Color: <input type="color"></div>
+                <div>List:
+                    <input id="lista-nombres" type="text" list="mylist">
+                    <datalist id="mylist">
+                        <option label="M" value="Ane">
+                        <option label="M" value="Ana">
+                        <option label="H" value="Andoni">
+                        <option label="M" value="Mirari">
+                        <option label="M" value="Miren">
+                        <option label="H" value="Mikel">
+                    </datalist>
+                </div>
+                <div>Af,Ph,Rq,Ac: <input type="text"  autofocus autocomplete="on" placeholder="placeholder" required></div>
+                <div>Numbre[1-10]: <input type="number" min="1" max="10" step="1"></div>
+                <div>Ficheros: <input type="file" multiple="multiple"></div>
+                <div>Clave: <input pattern="[0-9][A-Z]{6}"></div>
+                <div>Progreso: <progress value="5" max="20">5</progress></div>
+
+                <div>Validar: <input type="submit" value="Enviar"></div>
+            </form>
+        </section>
+    </body>
+</html>
