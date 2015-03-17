@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8" />
+      <title>Video</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="js/jquery-1.11.2.min.js"></script>
+      <script type="text/javascript" src="js/video.js"></script>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+       <header>
+           <i class="fa fa-video-camera"></i>
+        </header>
+        <section>
+
+           <video id="miVideo">
+              <source src="surf360.mp4" type='video/mp4' codecs='avc1.42E01E, mp4a.40.2'>
+
+              <source src="surf360.webm" type='video/webm' codecs='vp8, vorbis'>
+           </video>
+
+           <div class="botones">
+
+               <input id="bIniciar" class="boton" type="button" value="Iniciar">
+
+               <input id="bPause" class="boton" type="button" value="Pausa">
+
+                <input id="bParar" class="boton" type="button" value="Parar">
+
+                <input id="bAvanzar" class="boton" type="button" value="Avanzar">
+
+                <input id="bRetroceder" class="boton" type="button" value="Retroceder">
+
+                <input id="bInicio" class="boton" type="button" value="Inicio">
+
+                <input id="bFin" class="boton" type="button" value="Fin">
+
+                <input id="bPantCompl" class="boton" type="button" value="Pantalla Completa">
+
+                <input id="bVolumen" type="range" min="0" max="1" step="0.1">
+
+                <progress id="progreso"></progress>
+
+           </div>
+
+        </section>
+    </body>
+</html>
